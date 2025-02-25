@@ -7,6 +7,8 @@ public class Teste {
 
         int valor = 10;
 
+        final String idade = "ABC";
+
         System.out.println("Testando");
         System.out.println(valor);
         System.out.println("4");
