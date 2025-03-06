@@ -15,6 +15,14 @@ import java.util.Scanner;
 public class Uni3Exe11 {
 
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Informe a temperatura em Grau Celsius:");
+		double grausCelcius = scanner.nextDouble();
 		
+		double fahrenheit = ((9.0/5.0) * grausCelcius) + 32;
+		System.out.println("A temperatura em fahrenheit é: " + fahrenheit);
+		
+		scanner.close();
 	}
 }

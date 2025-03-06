@@ -24,6 +24,36 @@ import java.util.Scanner;
 public class Uni3Exe12 {
 
 	public static void main(String[] args) {
-		
+		final double valorHoraTrabalhada = 10;
+		final double valorDependente = 60;
+		final double percentualINSS = 0.085;
+		final double percentualIR = 0.05;
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Informe o nome do funcionário: ");
+		String nome = scanner.next();
+
+		System.out.println("Informe a quantidade de horas trabalhadas: ");
+		double horasTrabalhadas = scanner.nextInt();
+
+		System.out.println("Informe o número de dependentes: ");
+		byte numeroDependentes = scanner.nextByte();
+
+		scanner.close();
+
+		double salarioHoras = horasTrabalhadas * valorHoraTrabalhada;
+		double salarioDependente = valorDependente * numeroDependentes;
+
+		double salarioBruto = salarioHoras + salarioDependente;
+
+		double descontos = (salarioHoras * percentualINSS) 
+			+ (salarioHoras * percentualIR);
+
+		double salarioLiquido = (salarioHoras - descontos) + salarioDependente;
+		System.out.println("O funcionário " + nome 
+		+ " possui um salário bruto de R$" + salarioBruto 
+		+ " e um salário líquido de R$" + salarioLiquido);
+
 	}
 }

@@ -19,6 +19,19 @@ import java.util.Scanner;
 public class Uni3Exe10 {
 
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Informe o cateto 1:");
+		double cateto1 = scanner.nextDouble();
 		
+		System.out.println("Informe o cateto 2:");
+		double cateto2 = scanner.nextDouble();
+		
+		scanner.close();
+		
+		double hipotenusaQuadrado = Math.pow(cateto1, 2) + Math.pow(cateto2, 2);
+		double hipotenusa = Math.sqrt(hipotenusaQuadrado);
+
+		System.out.println("A Hipotenusa do triangulo informado é: " + hipotenusa);
 	}
 }

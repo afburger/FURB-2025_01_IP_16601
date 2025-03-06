@@ -16,6 +16,30 @@ import java.util.Scanner;
 public class Uni3Exe05 {
 
 	public static void main(String[] args) {
+		final int anelChip = 1;
+		final int anelAlimento = 2;
+		final double valorAnelChip = 4.0;
+		final double valorAnelAlimento = 3.5;
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Informe a quantidade de galinhas:");
+		int quantidadeGalinhas = scan.nextInt();
+
+		scan.close();
 		
+		double gastoChipPorGalinha = anelChip * valorAnelChip;
+		double gastoAlimentoPorGalinha = anelAlimento * valorAnelAlimento;
+		double totalGastoChip = gastoChipPorGalinha * quantidadeGalinhas;
+		double totalGastoAlimento = gastoAlimentoPorGalinha * quantidadeGalinhas;
+
+		double valor = totalGastoChip + totalGastoAlimento;
+
+		System.out.println("O gasto total para marcar " 
+		+ quantidadeGalinhas + " é R$ " + valor);
+
+
+
+
 	}
 }
