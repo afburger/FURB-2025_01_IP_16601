@@ -19,6 +19,23 @@ import java.util.Scanner;
 public class Uni3Exe13 {
 
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		final double valorAzuleijo = 12.50;
+		final double azuleijosMetro = 9.0;
+
+		System.out.println("Informe o comprimento da parede: ");
+		double comprimento = scanner.nextDouble();
 		
+		System.out.println("Informe a altura da parede: ");
+		double altura = scanner.nextDouble();
+		
+		double metragemQuadrada = comprimento * altura;
+		double quantidadeAzuleijos = metragemQuadrada * azuleijosMetro;
+		double valorTotal = quantidadeAzuleijos * valorAzuleijo;
+
+		System.out.println("O valor final é R$ " + valorTotal);
+		
+		scanner.close();
 	}
 }

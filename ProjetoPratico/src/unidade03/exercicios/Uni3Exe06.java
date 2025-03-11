@@ -23,6 +23,8 @@ public class Uni3Exe06 {
 		System.out.println("Informe o peso do prato:");
 		double pesoPrato = scan.nextDouble();
 
+		scan.close();
+
 		double valorPrato = (pesoPrato - tara) * valorKg;
 
 		System.out.println("O valor do prato do cliente é R$" 

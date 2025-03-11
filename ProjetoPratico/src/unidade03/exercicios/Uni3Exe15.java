@@ -19,6 +19,23 @@ import java.util.Scanner;
 public class Uni3Exe15 {
 
 	public static void main(String[] args) {
-		
+		Scanner teclado = new Scanner(System.in);
+
+		System.out.println("Informe um número de até 3 dígitos");
+		int numero = teclado.nextInt();
+
+		teclado.close();
+
+		int centena = numero / 100;
+		numero = numero - (centena * 100);
+
+		int dezena = numero / 10;
+		numero = numero - (dezena * 10);
+
+		int unidade = numero / 1;
+
+		System.out.println(centena + " centena(s) " 
+		+ dezena + " dezena(s) " + unidade + " unidade(s)");
+
 	}
 }

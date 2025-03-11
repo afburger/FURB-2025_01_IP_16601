@@ -18,6 +18,22 @@ import java.util.Scanner;
 public class Uni3Exe14 {
 
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		final int autonomia = 12;
 		
+		System.out.println("Informe o tempo gasto na viagem em horas: ");
+		int tempoGasto = scanner.nextInt();
+		
+		System.out.println("Informe a distância percorrida na viagem: ");
+		int distanciaPercorrida = scanner.nextInt();
+		
+		double velocidadeMedia = distanciaPercorrida / tempoGasto;
+				
+		double gastoCombustivel = distanciaPercorrida / autonomia;
+		
+		System.out.println("A velocidade média foi de "+ velocidadeMedia +" km/h e a quantidade de combustível usado foi "+ gastoCombustivel +" litros");
+		
+		scanner.close();
 	}
 }

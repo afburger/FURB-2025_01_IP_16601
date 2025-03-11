@@ -1,5 +1,6 @@
 package unidade03.exercicios;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
@@ -50,10 +51,13 @@ public class Uni3Exe12 {
 		double descontos = (salarioHoras * percentualINSS) 
 			+ (salarioHoras * percentualIR);
 
+
+		DecimalFormat formatador = new DecimalFormat("0.0000");
+		
 		double salarioLiquido = (salarioHoras - descontos) + salarioDependente;
 		System.out.println("O funcionário " + nome 
-		+ " possui um salário bruto de R$" + salarioBruto 
-		+ " e um salário líquido de R$" + salarioLiquido);
+		+ " possui um salário bruto de R$" + formatador.format(salarioBruto) 
+		+ " e um salário líquido de R$" + formatador.format(salarioLiquido));
 
 	}
 }
