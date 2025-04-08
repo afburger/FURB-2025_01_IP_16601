@@ -17,7 +17,7 @@ public class Questao4C {
 
         teclado.close();
 
-        if (esporte.isBlank() && estilo.isBlank()) {
+        if (esporte.length() == 0 && estilo.isBlank()) {
             System.out.println("Não é possível informar os dados");
             System.out.println("Vazio");
         } else {

@@ -65,7 +65,7 @@ public static void main(String[] args) {
 				break;
 			case "D":
 				int media = (temperaturaMenor + temperaturaMedia + temperaturaMaior) / 3;
-				System.out.println("MMédia das temperaturas: " + media);
+				System.out.println("Média das temperaturas: " + media);
 				break;
 			default:
 				System.out.println("Valor inválido");

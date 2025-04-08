@@ -17,7 +17,7 @@ public class Questao6D {
 
         teclado.close();
 
-        if (medico.isBlank() && especialidade.isBlank()) {
+        if (medico.length() == 0 && especialidade.isBlank()) {
             System.out.println("Não é possível informar os dados");
             System.out.println("Vazio");
         } else {

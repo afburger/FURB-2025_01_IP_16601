@@ -10,18 +10,18 @@ public class Questao4D {
 		System.out.println("Informe o código de pagamento:");
 		teclado.close();
 
-		String codigoCombustivel = teclado.next().toUpperCase();
+		String codigoPagamento = teclado.next().toUpperCase();
 	
-		if (codigoCombustivel.equals("C")) {
+		if (codigoPagamento.equals("C")) {
 			System.out.println("Cartão de crédito");
 		} else {
-			if (codigoCombustivel.equals("D")) {
+			if (codigoPagamento.equals("D")) {
 				System.out.println("Cartão de débito");
 			} else {
-				if (codigoCombustivel.equals("P")) {
+				if (codigoPagamento.equals("P")) {
 					System.out.println("PIX");
 				} else {
-					if (codigoCombustivel.equals("B")) {
+					if (codigoPagamento.equals("B")) {
 						System.out.println("Boleto");
 					} else {
 						System.out.println("Entrada incorreta");
