@@ -9,7 +9,7 @@ public class Uni5Exe12 {
     int qtdLinhas = teclado.nextInt();
     int numFloyd;
 
-    // Opção A: sem consistir os espaçamentos
+    // Opção: sem consistir os espaçamentos
     numFloyd = 1;
     for (int linha = 1; linha <= qtdLinhas; linha++) {
       for (int coluna = 1; coluna <= linha; coluna++) {
@@ -19,24 +19,6 @@ public class Uni5Exe12 {
       System.out.println();
     }
 
-    // Opção B: consistindo os espacamentos até 3 digitos
-    numFloyd = 1;
-    for (int linha = 1; linha <= qtdLinhas; linha++) {
-      for (int coluna = 1; coluna <= linha; coluna++) {
-        if (numFloyd < 10) {
-          System.out.print(numFloyd + " ");
-        } else {
-          if (numFloyd < 100) {
-            System.out.print(numFloyd + " ");
-          } else {
-            System.out.print(numFloyd + " ");
-          }
-        }
-        numFloyd++;
-      }
-      System.out.println();
-    }
-    
     teclado.close();
   }
 }
